@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+select, button {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1557b0;
+}
+
+.speed-control, .size-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="range"] {
+    width: 150px;
+}
+
+.visualization-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    min-height: 400px;
+}
+
+#array-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 300px;
+    gap: 2px;
+    padding: 20px;
+}
+
+.array-bar {
+    background-color: #1a73e8;
+    transition: height 0.3s ease;
+}
+
+.array-bar.comparing {
+    background-color: #fbbc04;
+}
+
+.array-bar.sorted {
+    background-color: #34a853;
+}
+
+.info-panel {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.algorithm-info, .stats {
+    flex: 1;
+}
+
+.algorithm-info h3 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.stats p {
+    margin: 5px 0;
+    font-family: monospace;
+}
+
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+    }
+    
+    .info-panel {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .speed-control, .size-control {
+        width: 100%;
+        justify-content: space-between;
+    }
+} 

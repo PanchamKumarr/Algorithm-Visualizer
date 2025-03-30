@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Algorithm Visualizer</h1>
+            <div class="controls">
+                <select id="algorithm-select">
+                    <optgroup label="Sorting Algorithms">
+                        <option value="bubble">Bubble Sort</option>
+                        <option value="quick">Quick Sort</option>
+                        <option value="merge">Merge Sort</option>
+                        <option value="insertion">Insertion Sort</option>
+                    </optgroup>
+                    <optgroup label="Searching Algorithms">
+                        <option value="linear">Linear Search</option>
+                        <option value="binary">Binary Search</option>
+                    </optgroup>
+                </select>
+                <button id="generate-array">Generate New Array</button>
+                <button id="start">Start Visualization</button>
+                <div class="speed-control">
+                    <label for="speed">Speed:</label>
+                    <input type="range" id="speed" min="1" max="100" value="50">
+                </div>
+                <div class="size-control">
+                    <label for="size">Array Size:</label>
+                    <input type="range" id="size" min="5" max="100" value="50">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="visualization-container">
+                <div id="array-container"></div>
+            </div>
+            <div class="info-panel">
+                <div class="algorithm-info">
+                    <h3>Algorithm Information</h3>
+                    <p id="time-complexity">Time Complexity: </p>
+                    <p id="space-complexity">Space Complexity: </p>
+                </div>
+                <div class="stats">
+                    <p id="comparisons">Comparisons: 0</p>
+                    <p id="swaps">Swaps: 0</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/algorithms/sorting.js"></script>
+    <script src="js/algorithms/searching.js"></script>
+    <script src="js/visualizer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
