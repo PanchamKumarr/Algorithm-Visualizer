@@ -1,6 +1,8 @@
 # Algorithm Visualizer
 
 A web-based visualization tool for common sorting and searching algorithms. This project helps in understanding how different algorithms work through interactive animations.
+## LIVE DEMO
+[LIVE](https://algorithm-visualizer-seven-sigma.vercel.app/)
 
 ## Features
 
